@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../extensions/hover_extensions.dart';
 
 class Header extends StatelessWidget {
   @override
@@ -57,7 +58,7 @@ class HeaderContent extends StatelessWidget {
               style: TextStyle(fontFamily: 'Montserrat',fontWeight: FontWeight.bold,letterSpacing: 0.5),
             ),
             onPressed: (){}
-          ),
+          ).showCursorOnHover.moveUpOnHover,
         ],
       ),
     );

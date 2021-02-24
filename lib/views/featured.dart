@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../extensions/hover_extensions.dart';
 
 class Featured extends StatelessWidget {
 
@@ -16,7 +17,7 @@ class Featured extends StatelessWidget {
           scale: 2.7,
         ),
       ],
-    );
+    ).showCursorOnHover.moveUpOnHover;
   }
 
   @override
