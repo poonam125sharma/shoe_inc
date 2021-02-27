@@ -51,11 +51,13 @@ class HeaderContent extends StatelessWidget {
           ),
           SizedBox(height: 30,),
           MaterialButton(
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4),),
+            padding: EdgeInsets.symmetric(horizontal: 25, vertical: 20),
             textColor: Colors.white,
-            color: Color(0xfffaa700),            
+            color: Color(0xfffaa700),
             child: Text(
               'See What We Have',
-              style: TextStyle(fontFamily: 'Montserrat',fontWeight: FontWeight.bold,letterSpacing: 0.5),
+              style: TextStyle(fontFamily: 'Montserrat',fontWeight: FontWeight.bold,letterSpacing: 0.5, fontSize: 16,),
             ),
             onPressed: (){}
           ).showCursorOnHover.moveUpOnHover,
